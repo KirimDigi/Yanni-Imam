@@ -1,0 +1,5 @@
+*.bak
+*.bak[0-9]
+webcopy-origin.txt
+.DS_Store
+Thumbs.db

@@ -885,12 +885,20 @@ margin-right: 15px;
 }
 
 /* === High Contrast Enhancements (Coverpage & Across All Sections) === */
-#cover {
-  width: 100%;
-  background-image: url('Foto 2.jpeg') !important;
-  background-size: cover !important;
-  background-position: center center !important;
-}
+  #cover,
+  .elementor-element.elementor-element-d7d411 {
+    width: 100%;
+    background-image: url('cover.jpeg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+  #cover .elementor-background-slideshow__slide__image,
+  .elementor-element-7e403f4 .elementor-background-slideshow__slide__image,
+  .elementor-element.elementor-element-d7d411 .elementor-background-slideshow__slide__image {
+    background-image: url('cover.jpeg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
 #cover .elementor-background-slideshow__slide__image,
 .elementor-element-7e403f4 .elementor-background-slideshow__slide__image {
   background-image: url('Foto 2.jpeg') !important;
@@ -938,15 +946,16 @@ margin-right: 15px;
 }
 
 /* === Slide Awal Anchoring & Layout (Matching Screenshot) === */
-#slide_awal {
-  min-height: 100vh !important;
-  position: relative !important;
-  overflow: hidden !important;
-  scroll-margin-top: 0px !important;
-  background-image: url('Foto 2.jpeg') !important;
-  background-size: cover !important;
-  background-position: center center !important;
-}
+  #slide_awal,
+  .elementor-element.elementor-element-805833b {
+    min-height: 100vh !important;
+    position: relative !important;
+    overflow: hidden !important;
+    scroll-margin-top: 0px !important;
+    background-image: url('aw 1.jpeg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
 #slide_awal > .elementor-container {
   min-height: 100vh !important;
 }
@@ -984,15 +993,37 @@ margin-right: 15px;
   letter-spacing: 0.3px;
 }
 
-/* Spacing Nicknames (Yanni & Imam) above Full Names to avoid crowding */
-.elementor-element.elementor-element-4f3dfc5,
-.elementor-element.elementor-element-6f32850 {
-  margin-bottom: 32px !important;
-}
-.elementor-element.elementor-element-e5f2edf,
-.elementor-element.elementor-element-1fc5f47 {
-  margin-top: 14px !important;
-}
+/* Nicknames (Yanni & Imam) Candlefish Bold and tight spacing */
+  .elementor-element.elementor-element-4f3dfc5,
+  .elementor-element.elementor-element-6f32850 {
+    margin-bottom: 6px !important;
+  }
+  .elementor-element.elementor-element-4f3dfc5 p.elementor-heading-title,
+  .elementor-element.elementor-element-6f32850 p.elementor-heading-title,
+  p.nama-panggilan-mempelai {
+    font-family: 'candlefish', sans-serif !important;
+    font-size: 38px !important;
+    font-weight: 700 !important;
+    color: #541E24 !important;
+    line-height: 1.15em !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+  .elementor-element.elementor-element-e5f2edf,
+  .elementor-element.elementor-element-1fc5f47 {
+    margin-top: 0px !important;
+  }
+  .elementor-element.elementor-element-e5f2edf .elementor-heading-title,
+  .elementor-element.elementor-element-1fc5f47 .elementor-heading-title {
+    font-family: 'candlefish', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    color: #541E24 !important;
+    line-height: 1.2em !important;
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+    text-align: center !important;
+  }
 
 /* Save The Date Single Photo STD.jpg */
 .elementor-element.elementor-element-20bc11e.saveTheDate,
@@ -1014,7 +1045,7 @@ margin-right: 15px;
 /* Wedding Gift Custom Photo */
 .elementor-element.elementor-element-b62c4b0,
 .elementor-element.elementor-element-b62c4b0 .elementor-background-slideshow__slide__image {
-  background-image: url('wedding-gift.jpg') !important;
+  background-image: url('wedding gift.jpg') !important;
   background-size: cover !important;
   background-position: center center !important;
 }
@@ -1107,6 +1138,110 @@ margin-right: 15px;
   user-select: none;
 }
 </style>
+<style id="custom-priority-overrides">
+  /* 1. Cover Photo Priority Override */
+  #cover,
+  .elementor-element.elementor-element-d7d411,
+  #cover .elementor-background-slideshow__slide__image,
+  .elementor-element-d7d411 .elementor-background-slideshow__slide__image,
+  .elementor-element-7e403f4 .elementor-background-slideshow__slide__image {
+    background-image: url('cover.jpeg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  /* 2. Slide Awal Priority Override */
+  #slide_awal,
+  .elementor-element.elementor-element-805833b {
+    background-image: url('aw 1.jpeg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  /* 3. Nickname Mempelai Candlefish Bold */
+  .elementor-element.elementor-element-4f3dfc5 p.elementor-heading-title,
+  .elementor-element.elementor-element-6f32850 p.elementor-heading-title,
+  p.nama-panggilan-mempelai {
+    font-family: 'candlefish', sans-serif !important;
+    font-size: 38px !important;
+    font-weight: 700 !important;
+    color: #541E24 !important;
+    line-height: 1.15em !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+  .elementor-element.elementor-element-4f3dfc5,
+  .elementor-element.elementor-element-6f32850 {
+    margin-bottom: 6px !important;
+  }
+  .elementor-element.elementor-element-e5f2edf,
+  .elementor-element.elementor-element-1fc5f47 {
+    margin-top: 0px !important;
+  }
+  .elementor-element.elementor-element-e5f2edf .elementor-heading-title,
+  .elementor-element.elementor-element-1fc5f47 .elementor-heading-title {
+    font-family: 'candlefish', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    color: #541E24 !important;
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* Spasi Rapat Bride & Groom */
+  .elementor-element.elementor-element-7b91f7e > .elementor-element-populated {
+    padding-bottom: 12px !important;
+  }
+  .elementor-element.elementor-element-65f2c22 {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .elementor-element.elementor-element-17e90f5 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .elementor-element.elementor-element-9203ad2,
+  .elementor-element.elementor-element-9203ad2 > .elementor-element-populated {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .ampersand-mempelai {
+    font-size: 42px !important;
+    line-height: 1 !important;
+    margin: 0 auto !important;
+  }
+  .elementor-element.elementor-element-285eb21 > .elementor-container {
+    min-height: auto !important;
+  }
+  .elementor-element.elementor-element-0c7e419 > .elementor-element-populated {
+    padding-top: 8px !important;
+    padding-bottom: 30px !important;
+  }
+
+  /* 4. Wedding Gift Card Jernih */
+  .elementor-element.elementor-element-b62c4b0,
+  .elementor-element.elementor-element-b62c4b0 .elementor-background-slideshow__slide__image {
+    background-image: url('wedding gift.jpg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+  .elementor-element.elementor-element-1854a1b > .elementor-background-overlay,
+  .elementor-element.elementor-element-6a26978 > .elementor-background-overlay {
+    display: none !important;
+  }
+  .elementor-element.elementor-element-6a26978,
+  .elementor-element.elementor-element-6a26978 > .elementor-element-populated {
+    background: transparent !important;
+  }
+  .elementor-element.elementor-element-6fcc432 .elementor-heading-title {
+    color: #541E24 !important;
+    font-family: 'candlefish', sans-serif !important;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+  }
+</style>
 </head>
 <body class="wp-singular post-template-default single single-post postid-30212 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-weddingsaas-wp wp-child-theme-weddingsaas-wp-child elementor-default elementor-template-canvas elementor-kit-7 elementor-page-30207 elementor-page-916707 elementor-page-843619 elementor-page-843600 elementor-page-805683">
 	<!-- Google Tag Manager (noscript) -->
@@ -1122,7 +1257,7 @@ margin-right: 15px;
 				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-49f92c84" data-id="49f92c84" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 					<div class="elementor-background-overlay"></div>
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-d7d411 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default" data-id="d7d411" data-element_type="section" data-e-type="section" id="cover" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:30609,&quot;url&quot;:&quot;Foto 2.jpeg&quot;}],&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-d7d411 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default" data-id="d7d411" data-element_type="section" data-e-type="section" id="cover" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:30609,&quot;url&quot;:&quot;cover.jpeg&quot;}],&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-default">
 					<div data-dce-background-color="#10101070" class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-336270a4" data-id="336270a4" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
@@ -1239,7 +1374,7 @@ margin-right: 15px;
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-805833b elementor-section-height-min-height wdsdv-enabled--yes elementor-section-boxed elementor-section-height-default" data-id="805833b" data-element_type="section" data-e-type="section" id="slide_awal" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_slide_duration&quot;:1000,&quot;background_slideshow_transition_duration&quot;:4000,&quot;jet_parallax_layout_list&quot;:[],&quot;background_slideshow_slide_transition&quot;:&quot;slide_left&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:30610,&quot;url&quot;:&quot;Foto 2.jpeg&quot;},{&quot;id&quot;:30611,&quot;url&quot;:&quot;Foto 3.jpeg&quot;}],&quot;background_slideshow_loop&quot;:&quot;yes&quot;}">
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-805833b elementor-section-height-min-height wdsdv-enabled--yes elementor-section-boxed elementor-section-height-default" data-id="805833b" data-element_type="section" data-e-type="section" id="slide_awal" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_slide_duration&quot;:1000,&quot;background_slideshow_transition_duration&quot;:4000,&quot;jet_parallax_layout_list&quot;:[],&quot;background_slideshow_slide_transition&quot;:&quot;slide_left&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:30610,&quot;url&quot;:&quot;aw 1.jpeg&quot;},{&quot;id&quot;:30611,&quot;url&quot;:&quot;aw 2.jpeg&quot;},{&quot;id&quot;:30612,&quot;url&quot;:&quot;aw 3.jpeg&quot;}],&quot;background_slideshow_loop&quot;:&quot;yes&quot;}">
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-default">
 					<div data-dce-background-overlay-color="#10101050" class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2d6538d" data-id="2d6538d" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -1398,9 +1533,9 @@ Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah 
 							<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7b91f7e" data-id="7b91f7e" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-4f3dfc5 inv-zoom-out elementor-widget elementor-widget-heading" data-id="4f3dfc5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default" style="margin-bottom: 32px !important;">
+						<div class="elementor-element elementor-element-4f3dfc5 inv-zoom-out elementor-widget elementor-widget-heading" data-id="4f3dfc5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default" style="margin-bottom: 6px !important;">
 				<div class="elementor-widget-container">
-					<p class="elementor-heading-title elementor-size-default" style="font-family: 'thesignature', cursive, sans-serif; font-size: 52px; font-weight: normal; color: #541E24; line-height: 1.2em; margin: 0; text-align: center;">Yanni</p>
+					<p class="elementor-heading-title elementor-size-default nama-panggilan-mempelai" style="font-family: 'candlefish', sans-serif !important; font-size: 38px !important; font-weight: 700 !important; color: #541E24 !important; line-height: 1.15em !important; margin: 0; text-align: center;">Yanni</p>
 				</div>
 				</div>
 				<div data-dce-title-color="#6D8998" class="elementor-element elementor-element-e5f2edf inv-zoom-out elementor-widget elementor-widget-heading" data-id="e5f2edf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
@@ -1451,9 +1586,9 @@ Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah 
 							<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-0c7e419" data-id="0c7e419" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-6f32850 inv-zoom-out elementor-widget elementor-widget-heading" data-id="6f32850" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default" style="margin-bottom: 32px !important;">
+						<div class="elementor-element elementor-element-6f32850 inv-zoom-out elementor-widget elementor-widget-heading" data-id="6f32850" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default" style="margin-bottom: 6px !important;">
 				<div class="elementor-widget-container">
-					<p class="elementor-heading-title elementor-size-default" style="font-family: 'thesignature', cursive, sans-serif; font-size: 52px; font-weight: normal; color: #541E24; line-height: 1.2em; margin: 0; text-align: center;">Imam</p>
+					<p class="elementor-heading-title elementor-size-default nama-panggilan-mempelai" style="font-family: 'candlefish', sans-serif !important; font-size: 38px !important; font-weight: 700 !important; color: #541E24 !important; line-height: 1.15em !important; margin: 0; text-align: center;">Imam</p>
 				</div>
 				</div>
 				<div data-dce-title-color="#6D8998" class="elementor-element elementor-element-1fc5f47 inv-zoom-out elementor-widget elementor-widget-heading" data-id="1fc5f47" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
@@ -1763,7 +1898,7 @@ Jl. Kp. Pulo, Kedung Waringin, Kecamatan Bojong Gede Kabupaten Bogor, Jawa Barat
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5454112 elementor-section-height-min-height wdsdv-enabled--yes elementor-section-boxed elementor-section-height-default" data-id="5454112" data-element_type="section" data-e-type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;}">
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b62c4b0 inv-zoom-out" data-id="b62c4b0" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:30623,&quot;url&quot;:&quot;wedding-gift.jpg&quot;}],&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b62c4b0 inv-zoom-out" data-id="b62c4b0" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:30623,&quot;url&quot;:&quot;wedding gift.jpg&quot;}],&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<section data-dce-background-overlay-color="#101010" class="elementor-section elementor-inner-section elementor-element elementor-element-1854a1b elementor-section-height-min-height elementor-section-boxed elementor-section-height-default" data-id="1854a1b" data-element_type="section" data-e-type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;}">
 							<div class="elementor-background-overlay"></div>
@@ -2703,7 +2838,7 @@ btn_gift.onclick = function(){
             function bindCommonVisibilityHandlers() {
                 document.addEventListener('visibilitychange', function () {
                     if (document.visibilityState === 'visible') {
-                        if (typeof window.playAudio === 'function') window.playAudio();
+                        if (window.hasOpenedInvitation && typeof window.playAudio === 'function') window.playAudio();
                     } else if (typeof window.pauseAudio === 'function') {
                         // Immediate pause when leaving the tab, matching the old behavior.
                         if (!isYoutube && song) {
@@ -2865,11 +3000,8 @@ btn_gift.onclick = function(){
 
                 bindCommonVisibilityHandlers();
 
-                if (document.readyState === 'loading') {
-                    document.addEventListener('DOMContentLoaded', nativePlayAudio, { once: true });
-                } else {
-                    nativePlayAudio();
-                }
+                // Autoplay dinonaktifkan: musik HANYA mulai saat tombol Buka Undangan diklik
+                window.hasOpenedInvitation = false;
             } else {
                 var videoId = extractVideoID(youtubeUrl);
                 var ytStart = parseTime(youtubeStartSetting);
@@ -3043,8 +3175,40 @@ document.addEventListener('DOMContentLoaded', () => {
 if (typeof elementorFrontendConfig === 'undefined') {
     disableScrolling();
     document.body.style.height = "100vh";
+    function playInvitationMusic() {
+        window.hasOpenedInvitation = true;
+        var song = document.getElementById('song');
+        if (song) {
+            try {
+                if (song.paused) {
+                    if (song.currentTime < 23) {
+                        song.currentTime = 23;
+                    }
+                    song.volume = 1;
+                    var p = song.play();
+                    if (p && typeof p.then === 'function') {
+                        p.then(function() {
+                            if (typeof window.audioActive === 'function') window.audioActive();
+                        }).catch(function(err) {
+                            console.warn('Audio play caught:', err);
+                        });
+                    }
+                }
+            } catch (err) {}
+        }
+        if (typeof window.audioActive === 'function') {
+            window.audioActive();
+        }
+        if (window.jQuery) {
+            jQuery('#mute-sound').show();
+            jQuery('#unmute-sound').hide();
+        }
+    }
+    window.playInvitationMusic = playInvitationMusic;
+
     btn_open.onclick = function(e) {
         if (e && e.preventDefault) e.preventDefault();
+        playInvitationMusic();
         enableScrolling();
         closeCover();
         myFunction();
@@ -3055,6 +3219,17 @@ if (typeof elementorFrontendConfig === 'undefined') {
             }
         }, 150);
     };
+
+    // Tambahan listener langsung ke semua elemen pembuka undangan (click & touch)
+    var openElements = document.querySelectorAll('#btn_open, #btn_open a, a[href="#slide_awal"]');
+    openElements.forEach(function(el) {
+        el.addEventListener('click', function() {
+            playInvitationMusic();
+        }, false);
+        el.addEventListener('touchend', function() {
+            playInvitationMusic();
+        }, false);
+    });
 
 }
 
@@ -3283,7 +3458,7 @@ window.addEventListener("scroll", function() {
 		</section>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-e47b0ce elementor-section-full_width elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle elementor-section-height-default" data-id="e47b0ce" data-element_type="section" data-e-type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7e403f4 elementor-hidden-mobile elementor-hidden-tablet" data-id="7e403f4" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:30609,&quot;url&quot;:&quot;Foto 2.jpeg&quot;}],&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7e403f4 elementor-hidden-mobile elementor-hidden-tablet" data-id="7e403f4" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:30609,&quot;url&quot;:&quot;cover.jpeg&quot;}],&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 					<div class="elementor-background-overlay"></div>
 						<section data-dce-background-color="#541E2426" data-dce-background-overlay-color="#101010" class="elementor-section elementor-inner-section elementor-element elementor-element-93ca6a5 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default" data-id="93ca6a5" data-element_type="section" data-e-type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;}">
@@ -3330,7 +3505,7 @@ window.addEventListener("scroll", function() {
 				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a932614" data-id="a932614" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_slide_duration&quot;:1500,&quot;background_slideshow_transition_duration&quot;:3000,&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;out&quot;,&quot;background_slideshow_gallery&quot;:[],&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 					<div class="elementor-background-overlay"></div>
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-ca6a04c elementor-section-height-min-height wdsdv-enabled--yes elementor-section-boxed elementor-section-height-default" data-id="ca6a04c" data-element_type="section" data-e-type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_slide_duration&quot;:4000,&quot;background_slideshow_transition_duration&quot;:1000,&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:30610,&quot;url&quot;:&quot;Foto 2.jpeg&quot;},{&quot;id&quot;:30611,&quot;url&quot;:&quot;Foto 3.jpeg&quot;}],&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;in&quot;}">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-ca6a04c elementor-section-height-min-height wdsdv-enabled--yes elementor-section-boxed elementor-section-height-default" data-id="ca6a04c" data-element_type="section" data-e-type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_slide_duration&quot;:4000,&quot;background_slideshow_transition_duration&quot;:1000,&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:30610,&quot;url&quot;:&quot;aw 1.jpeg&quot;},{&quot;id&quot;:30611,&quot;url&quot;:&quot;aw 2.jpeg&quot;},{&quot;id&quot;:30612,&quot;url&quot;:&quot;aw 3.jpeg&quot;}],&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;in&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2be8867" data-id="2be8867" data-element_type="column" data-e-type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
